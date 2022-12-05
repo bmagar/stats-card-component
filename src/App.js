@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section className="main-section">
+        <div>
+          <img
+            className="hero-image"
+            src={require("./images/image-header-mobile.jpg")}
+          />
+        </div>
+        <div className="content-info">
+          <div>
+            <h1 className="primary-info">
+              Get <span className="main-word">insights</span>that help your
+              business grow.
+            </h1>
+            <p>
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
+          <div className="secondary-info">
+            <div className="hey">
+              <h4>10k+</h4>
+              <p>Companies</p>
+            </div>
+            <div className="hey">
+              <h4>314</h4>
+              <p>templates</p>
+            </div>
+            <div className="hey">
+              <h4>12m+</h4>
+              <p>Quries</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 
